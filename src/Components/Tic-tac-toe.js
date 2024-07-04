@@ -50,6 +50,7 @@ function Board({ xIsNext, squares, onPlay }) {
           marginBottom: "10px",
           fontSize: "24px",
           fontWeight: "bold",
+          textAlign: "center",
         }}
       >
         {status}
@@ -97,9 +98,9 @@ export default function TicTacToe() {
   const moves = history.map((squares, move) => {
     let description;
     if (move > 0) {
-      description = "Go to move #" + move;
+      description = "Move to # " + move;
     } else {
-      description = "Go to game start";
+      description = " Start game "; ;
     }
     return (
       <li key={move}>
@@ -113,7 +114,7 @@ export default function TicTacToe() {
       <div style={{ marginRight: "20px" }}>
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
         <div style={{ marginTop: "10px" }}>
-          <button onClick={resetGame} style={{ marginLeft: "10px" }}>Reset  Game</button>
+          <button onClick={resetGame}>Reset  Game</button>
         </div>
       </div>
       <div style={{ marginLeft: "20px" }}>
