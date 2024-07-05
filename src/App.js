@@ -1,9 +1,9 @@
 import "./App.css";
-import Value from "./Components/+-value";
+import DynamicList from "../src/Components/Dynamicvalue";
 function App() {
   return (
     <>
-      <Value />
+      <DynamicList />
     </>
   );
 }
