@@ -18,7 +18,7 @@ const ItemList = () => {
 
   return (
     <div>
-      <h1>DynamicList List</h1>
+      <h1>Dynamic List</h1>
       <input 
         type="text" 
         value={newItem} 
@@ -29,7 +29,7 @@ const ItemList = () => {
         {items.map((item, index) => (
           <li key={index}>
             {item}
-            <button onClick={() => removeItem(index)}>Remove</button>
+            <button style={{ marginLeft: '10px' }} onClick={() => removeItem(index)}>Remove</button>
           </li>
         ))}
       </ul>

@@ -1,9 +1,9 @@
 import "./App.css";
-import DynamicList from "../src/Components/Dynamicvalue";
+import Mapping from "../src/Components/mapping";
 function App() {
   return (
     <>
-      <DynamicList />
+      <Mapping />
     </>
   );
 }
