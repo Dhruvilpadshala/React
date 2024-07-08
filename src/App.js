@@ -1,9 +1,9 @@
 import "./App.css";
-import Mapping from "../src/Components/mapping";
+import { Props } from "./Components/Props";
 function App() {
   return (
     <>
-      <Mapping />
+      <Props />
     </>
   );
 }
