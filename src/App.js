@@ -1,9 +1,9 @@
 import "./App.css";
-import { Props } from "./Components/Props";
+import ContactForm from "./Components/ContactForm";
 function App() {
   return (
     <>
-      <Props />
+      <ContactForm />
     </>
   );
 }
